@@ -6,9 +6,9 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 export class NavigationBar extends Component {
   
   render() {
-    return (<div>
-        <Link to="/">Home   </Link>
-        <Link to="/catalog">Catalog </Link>
+    return (<div id="navigation-bar">
+        <Link className='linkInNavigationBar' to="/">Home</Link>
+        <Link className='linkInNavigationBar' to="/catalog">Catalog </Link>
         </div>
     )
   }

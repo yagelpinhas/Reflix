@@ -10,10 +10,15 @@
 }
 
 .user-box{
-  width: 50px;
-  height:30px;
-  background-color: greenyellow;
-  text-align: center;
+    background-color: purple;
+    border-style: groove;
+    text-align: center;
+    justify-content: center;
+    font-family: "Sofia", sans-serif;
+    display: relative;
+    width:80px;
+    height:80px;
+
 }
 #main-links > a{
   margin: 10px;
@@ -56,7 +61,7 @@
 }
 
 a {
-  color: hotpink;
+  color: slateblue;
 }
 
 .movies-container{
@@ -79,4 +84,83 @@ box-shadow: 1px 1px 3px black;
 box-sizing: border-box;
 height: 300px;
 width: 270px;
+}
+
+.homeLink{
+  gap:10px;
+}
+
+.catalogLink{
+  gap:10px;
+}
+
+#navigation-bar{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.renting-title{
+  font-family: "Sofia", sans-serif;
+}
+
+.linkInNavigationBar{
+  font-family: "Trirong", serif;
+}
+
+.budget{
+  font-family: "Audiowide", sans-serif;
+}
+
+.button_plus {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  background: #fff;
+  cursor: pointer;
+  border: 2px solid #095776;
+
+  /* Mittig */
+  top: 50%;
+  left: 50%;
+}
+
+.button_plus:after {
+  content: '';
+  transform: translate(-50%, -50%);
+  height: 4px;
+  width: 50%;
+  background: #095776;
+  top: 50%;
+  left: 50%;
+}
+
+.button_plus:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #095776;
+  height: 50%;
+  width: 4px;
+}
+
+.button_plus:hover:before,
+.button_plus:hover:after {
+  background: #fff;
+  transition: 0.2s;
+}
+
+.button_plus:hover {
+  background-color: #095776;
+  transition: 0.2s;
+}
+
+body{
+  background-color: plum;
+}
+
+.movie-input{
+  background-color: salmon;
 }
