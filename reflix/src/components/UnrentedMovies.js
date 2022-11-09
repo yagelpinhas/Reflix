@@ -1,19 +1,16 @@
 import React, { Component } from 'react'
+import {Movie} from './Movie';
 
-export class RentedMovies extends Component {
-  
+export class UnrentedMovies extends Component {
   render() {
     return (<div>
               <div>unrented:</div>
               <div className='movies-container'>{this.props.movies.map(movie=>
-                <div className='movie-item'>
-                  <img class="movie-img "src={movie.img}></img>
-                  <button onClick={this.props.rentAMovie(movie.id)}>+</button>
-                </div>
+                <Movie movie={movie} func={this.props.rentAMovie}/>
               )}</div>
             </div>
     )
   }
 }
 
-export default RentedMovies;
+export default UnrentedMovies;
