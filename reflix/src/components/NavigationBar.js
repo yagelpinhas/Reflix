@@ -4,6 +4,7 @@ import {Catalog} from './Catalog';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 
 export class NavigationBar extends Component {
+  
   render() {
     return (<div>
         <Link to="/">Home   </Link>
