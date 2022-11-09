@@ -8,6 +8,7 @@ import {NavigationBar} from './components/NavigationBar';
 import {MovieInformation} from './components/MovieInformation';
 
 class App extends Component {
+  MOVIE_COST = 3
   constructor() {
     super()
     this.state = {
@@ -33,8 +34,13 @@ class App extends Component {
       console.log(`the movie with id ${movieId} is already rented`)
     }
     else{
-      relevantMovie["isRented"]=true
-      currBudget-=3;
+      if(currBudget>=this.MOVIE_COST){
+        relevantMovie["isRented"]=true
+        currBudget-=this.MOVIE_COST;
+      }
+      else{
+        console.log("You don't have enough money")
+      }
       this.setState({movies: currentMovies, budget: currBudget})
     }
     
@@ -55,7 +61,7 @@ class App extends Component {
     }
     else{
       relevantMovie["isRented"]=false
-      currBudget+=3
+      currBudget+=this.MOVIE_COST
       this.setState({movies: currentMovies, budget: currBudget})
     }
     
