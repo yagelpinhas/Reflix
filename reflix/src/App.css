@@ -1,7 +1,25 @@
+
 .App {
   text-align: center;
 }
 
+#users-template{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.user-box{
+  width: 50px;
+  height:30px;
+  background-color: greenyellow;
+  text-align: center;
+}
+#main-links > a{
+  margin: 10px;
+  color: #34495e;
+  text-shadow: -1px -1px 0 #ecf0f1, 1px -1px 0 #ecf0f1, -1px 1px 0 #ecf0f1, 1px 1px 0 #ecf0f1;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +53,30 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+a {
+  color: hotpink;
+}
+
+.movies-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.movie-item{
+  background-color: #FF6700;
+  text-align: center;
+  align-content: center;
+  font-family: 'Courier New', Courier, monospace;
+  padding-left: 1vw;
+  padding-right: 1vw;
+}
+.movie-img{
+background-color: #bdc3c7;
+box-shadow: 1px 1px 3px black;
+box-sizing: border-box;
+height: 300px;
+width: 270px;
 }
