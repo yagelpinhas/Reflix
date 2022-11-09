@@ -6,7 +6,7 @@ export class RentedMovies extends Component {
     return (<div>
               <div className='renting-title'>Rented:</div>
               <div className='movies-container'>{this.props.movies.map(movie=>
-                <Movie movie={movie} func={this.props.unrentAMovie}/>
+                <Movie movie={movie} unrentAMovie={this.props.unrentAMovie} rentAMovie={this.props.rentAMovie}/>
               )}</div>
             </div>
     )

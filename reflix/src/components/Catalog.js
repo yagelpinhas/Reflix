@@ -15,8 +15,8 @@ export class Catalog extends Component {
         <div id="search-container">
         <input className='movie-input' type="text" name="name" placeholder='movie name' onChange={this.handleChange}/>
          </div>
-        <RentedMovies movies={this.props.rentedMovies} unrentAMovie={this.props.unrentAMovie}/>
-        <UnrentedMovies movies={this.props.unrentedMovies} rentAMovie={this.props.rentAMovie}/>
+        <RentedMovies movies={this.props.rentedMovies} unrentAMovie={this.props.unrentAMovie} rentAMovie={this.props.rentAMovie}/>
+        <UnrentedMovies movies={this.props.unrentedMovies} rentAMovie={this.props.rentAMovie} unrentAMovie={this.props.unrentAMovie}/>
         </div>
     )
   }
