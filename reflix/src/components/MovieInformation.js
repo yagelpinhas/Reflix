@@ -6,10 +6,10 @@ export class MovieInformation extends Component {
     return (
       <div>
       <span className='movie-title'>{movie.title}</span>
-      <span className='movie-year'>({movie.year})</span>
+      <span className="font-effect-neon">({movie.year})</span>
       <div></div>
       <img className='movie-img' src={movie.img}></img>
-      <div className='descrShort'>{movie.descrShort}</div>
+      <div className='font-effect-shadow-multiple info'>{movie.descrShort}</div>
       </div>
     )
   }

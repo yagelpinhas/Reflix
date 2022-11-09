@@ -164,3 +164,12 @@ body{
 .movie-input{
   background-color: salmon;
 }
+
+.movie-title{
+  font-family: "Sofia", sans-serif;
+  color: white;
+}
+
+.info{
+  color: white;
+}
